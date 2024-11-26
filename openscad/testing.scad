@@ -2,13 +2,13 @@
 // linear_extrude(4)
 // text("disenoUDP");
 
+bordeX = 5.0;
+bordeY = 5.0;
+bordeZ = 5.0;
+
 extLadoX = 60.0;
 extLadoY = 200.0;
 extLadoZ = 50.0;
-
-intLadoX = 80.0;
-intLadoY = 190.0;
-intLadoZ = 40.0;
 
 radioPerilla = 20.0;
 
@@ -16,11 +16,14 @@ module cajita(
     extLadoX,
     extLadoY,
     extLadoZ,
-    intLadoX,
-    intLadoY,
-    intLadoZ,
+    bordeX,
+    bordeY,
+    bordeZ
     )
+    
     {
+    
+    
     difference() {
     cube(
     [
@@ -29,11 +32,13 @@ module cajita(
     extLadoZ
     ],
     center = true);
+    
+    
     cube(
     [
-    intLadoX,
-    intLadoY,
-    intLadoZ
+    extLadoX - bordeX,
+    extLadoY - bordeY,
+    extLadoZ - bordeZ
     ],
     center = true);
     
@@ -49,13 +54,6 @@ module cajita(
     
     
     }
-    
-  
-    
-    
-    
-    
- 
 
 };
 
@@ -64,8 +62,8 @@ cajita(
     extLadoX,
     extLadoY,
     extLadoZ,
-    intLadoX,
-    intLadoY,
-    intLadoZ);
+    bordeX,
+    bordeY,
+    bordeZ);
 
 
