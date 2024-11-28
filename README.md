@@ -17,8 +17,6 @@ proyecto de investigación empezado en 2024, con el objetivo de crear un sinteti
 
 un aspecto muy bello de generar estructuras con STLs a partir de líneas de código, es que el diseño se puede parametrizar y automatizar.
 
-a partir del trabajo de Oskitone, este scrp
-
 ## referencias
 
 * Oskitone <https://oskitone.com>
