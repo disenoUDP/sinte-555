@@ -4,6 +4,9 @@
 // para diseno UDP
 // diciembre 2024
 
+// hecha con openscad
+// version 2024.11.25 (git b550957dd)
+
 include <constantes.scad>;
 include <creditos.scad>;
 
@@ -23,17 +26,21 @@ piramideX = protoBoardChicoX;
 piramideY = protoBoardChicoY;
 piramideZ = 200;
 
+angulo = 60;
+anguloCorte = 75;
+
 // base
 cube(
     [baseX,
     baseY,
-    baseZ], center = true);
+    baseZ],
+    center = true);
 
     // cuerpo
 difference() {
 // piramide de afuera
   hull() {
-    for (iterador=[0:200]) {
+    for (iterador=[0:piramideZ]) {
     translate([0, 0, iterador])
     cube(
     [piramideX - iterador,
@@ -43,36 +50,41 @@ difference() {
   }
   // piramide de adentro sustraida
   hull() {
-    for (iterador=[0:200]) {
+    for (iterador=[0:piramideZ]) {
     translate([0, 0, iterador])
     cube(
-    [piramideX - 3 - iterador,
-    piramideY - 3 - iterador,
+    [piramideX - 2 - iterador,
+    piramideY - 2 - iterador,
     1.1], center = true);
     }
   }
   
    // perilla uno
-  rotate([-65, 0, 0])
-  translate([-30.0, -40.0, 55.0])
+  rotate([-angulo, 0, 0])
+  translate([-15.0, -20.0, 25.0])
   cylinder(h = 30, r = 8.0, center = true);
 
   // perilla dos
-  rotate([-65, 0, 0])
-  translate([30.0, -10.0, 55.0])
+  rotate([-angulo, 0, 0])
+  translate([15.0, -5.0, 25.0])
   cylinder(h = 30, r = 8.0, center = true);
 
   // parlante
-  rotate([-65, 0, 0])
-  translate([15.0, -60.0, 55.0])
-  cylinder(h = 30, r = 25.0, center = true);
-
+  rotate([-angulo, 0, 0])
+  translate([8.0, -30.0, 25.0])
+  cylinder(h = 15, r = 12.0, center = true);
   
   // corte para protoboard
-  rotate([75, 75, 0])
-  translate([0, 0, 75])
-  cube([350, 350, 100], center = true);
-  
+translate([0, -30.0, 10])
+rotate([anguloCorte, anguloCorte, 0])
+cube([120, 120, 40], center = true);
+
 }
+
+
+
+
+
+
 
 
