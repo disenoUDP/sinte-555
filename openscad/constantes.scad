@@ -15,3 +15,7 @@ radioParlante = 10;
 
 radioEsferaFilete = 0;
 
+// dimensiones protoboard en mm
+protoBoardChicoX = 100;
+protoBoardChicoY = 60;
+protoBoardChicoZ = 30;
