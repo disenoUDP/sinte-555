@@ -37,6 +37,10 @@ en este taller de 2 horas vamos a aprender a armar un sintetizador conocido como
 | bla    |            |        |        |
 | bla    |            |        |        |
 
+<https://www.mechatronicstore.cl/>
+<https://www.victronics.cl/>
+<https://www.cabezacuadrada.cl/>
+
 ## paso 01: ubicar los chips en la protoboard
 
 tomar la protoboard y conectar los dos chips LM555 en ella.
