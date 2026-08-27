@@ -27,15 +27,15 @@ en este taller de 2 horas vamos a aprender a armar un sintetizador conocido como
 
 ## lista de materiales (bom)
 
-| Nombre           | Cantidad   | Precio | Enlace |
-| :--------------- | :--------- | :----- | :----- |
-| Protoboard       | 1          |        |        |
-| Chip 555         | 2          |        |        |
-| Resistor 1K      |            |        |        |
-| Potenciómetro    |            |        |        |
-| bla    |            |        |        |
-| bla    |            |        |        |
-| bla    |            |        |        |
+| Nombre             | Cantidad   | Precio | Enlace |
+| :----------------- | :--------- | :----- | :----- |
+| Protoboard         | 1          |        |        |
+| Chip 555           | 2          |        |        |
+| Potenciómetro 470k | 2          |        |        |
+| Parlante           | 1          |        |        |
+| Resistor 10k       | 2          |        |        |
+| Capacitor 100n     | 3          |        |        |
+| Capacitor 10n      | 1          |        |        |
 
 <https://www.mechatronicstore.cl/>
 <https://www.victronics.cl/>
