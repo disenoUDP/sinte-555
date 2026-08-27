@@ -1,2 +1,7 @@
 # Apple
 .DS_Store
+
+# Kicad
+.kicad_prl
+*-backups/
+*.zip
