@@ -63,26 +63,38 @@ usar cables negros o café para conectar al voltaje negativo (tierra).
 
 ## paso 03: armar el circuito de chip 555 de la izquierda, modo astable
 
-patitas:
+patitas de 555-1:
 
 * 1: a GND
 * 2: a GND por C de 10n, a patita 3 de pote-1
-* 3: a patita 2 de chip 555-2
+* 3: a patita 2 de 555-2
 * 4: a VCC
 * 5: a GND por C de 100n
 * 6: a patita 2
 * 7: a VCC por R 10k, a patita 2 de pote-1
 * 8: a VCC
 
+patitas de pote-1:
+
+* 1: nada
+* 2: patita 7 de 555-1
+* 3: patita 2 de 555-1
+
 ## paso 04: armar el circuito de 555 de la derecha, modo monostable
 
-patitas:
+patitas de 555-2:
 
 * 1: a GND
 * 2: a patita 3 del chip 555-1
 * 3: a patita 1 de parlante
 * 4: a VCC
 * 5: a GND por C de 100n
-* 6: a VCC por R de 10k, a GND por C polarizado de 100n
+* 6: a patita 3 de pote-2 por R de 10k, a GND por C polarizado de 100n
 * 7: a patita 6
 * 8: a VCC
+
+patitas de pote-2:
+
+* 1: nada
+* 2: a VCC
+* 3: a patita 6 de 555-2 por R de 10k
